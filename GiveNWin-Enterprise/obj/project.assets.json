@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\logonrmlocal\\source\\repos\\GiveNWin-Enterprise\\GiveNWin-Enterprise\\GiveNWin-Enterprise.csproj",
+      "projectUniqueName": "C:\\Users\\logonrmlocal\\Desktop\\GiveNWin-Enterprise\\GiveNWin-Enterprise\\GiveNWin-Enterprise.csproj",
       "projectName": "GiveNWin-Enterprise",
-      "projectPath": "C:\\Users\\logonrmlocal\\source\\repos\\GiveNWin-Enterprise\\GiveNWin-Enterprise\\GiveNWin-Enterprise.csproj",
+      "projectPath": "C:\\Users\\logonrmlocal\\Desktop\\GiveNWin-Enterprise\\GiveNWin-Enterprise\\GiveNWin-Enterprise.csproj",
       "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\logonrmlocal\\source\\repos\\GiveNWin-Enterprise\\GiveNWin-Enterprise\\obj\\",
+      "outputPath": "C:\\Users\\logonrmlocal\\Desktop\\GiveNWin-Enterprise\\GiveNWin-Enterprise\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
