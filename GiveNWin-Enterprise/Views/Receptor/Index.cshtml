@@ -1,16 +1,16 @@
-﻿@model List<Parceiro>
+﻿@model List<Receptor>
 
 @{
-	ViewData["Title"] = "Index";
+    ViewData["Title"] = "Index";
 }
 
-<h1>Parceiro</h1>
+<h1>Receptor</h1>
 
 <alert mensagem="@TempData["msg"]"></alert>
 
 <form class="row" asp-action="index" method="get">
     <div class="col-4">
-        <input name="filtro" class="form-control" type="text" placeholder="Digite o cnpj"/>
+        <input name="filtro" class="form-control" type="text" placeholder="Digite o cnpj" />
     </div>
     <button type="submit" texto="Pesquisar"></button>
 </form>
@@ -51,7 +51,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Deseja realmente apagar o parceiro?
+                Deseja realmente apagar o receptor?
             </div>
             <div class="modal-footer">
                 <form asp-action="excluir">
