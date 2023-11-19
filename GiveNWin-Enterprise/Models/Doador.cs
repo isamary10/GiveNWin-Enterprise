@@ -1,12 +1,22 @@
-﻿namespace GiveNWin_Enterprise.Models
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace GiveNWin_Enterprise.Models
 {
+    [Table("TB_GIVEWIN_DOADOR")]
     public class Doador
     {
+        [HiddenInput]
         public int Id { get; set; }
+        [Required]
         public string? Nome { get; set; }
         public string? Cpf { get; set; }
-        public DateTime? dataNascimento { get; set; }
-        public string? email { get; set; }
-        public int pontuacao { get; set; }
+        [Column("Dt_Nascimento"), Required]
+        public DateTime? DataNascimento { get; set; }
+        [Required]
+        public string? Email { get; set; }
+        [Required]
+        public int Pontuacao { get; set; }
     }
 }
