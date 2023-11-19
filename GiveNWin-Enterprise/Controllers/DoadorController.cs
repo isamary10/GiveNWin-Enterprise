@@ -52,10 +52,10 @@ namespace GiveNWin_Enterprise.Controllers
             return RedirectToAction("cadastrar");
         }
 
-        public IActionResult Index(string cpf = "")
+        public IActionResult Index(string filtro = "")
         {
             var lista = _context.Doadores
-                .Where(c => c.Cpf.Contains(cpf) || string.IsNullOrEmpty(cpf))
+                .Where(c => c.Cpf.Contains(filtro) || string.IsNullOrEmpty(filtro))
                 .ToList();
             return View(lista);
         }

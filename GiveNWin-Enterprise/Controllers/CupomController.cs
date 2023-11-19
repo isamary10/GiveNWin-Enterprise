@@ -54,10 +54,10 @@ namespace GiveNWin_Enterprise.Controllers
             return RedirectToAction("cadastrar");
         }
 
-        public IActionResult Index(string codigo = "")
+        public IActionResult Index(string filtro = "")
         {
             var lista = _context.Cupons
-                .Where(c => c.CodigoDesconto.Contains(codigo) || string.IsNullOrEmpty(codigo))
+                .Where(c => c.CodigoDesconto.Contains(filtro) || string.IsNullOrEmpty(filtro))
                 .ToList();
             return View(lista);
         }
