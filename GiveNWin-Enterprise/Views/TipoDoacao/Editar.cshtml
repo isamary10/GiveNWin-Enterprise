@@ -1,0 +1,13 @@
+﻿@model TipoDoacao
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Atualizar o tipo de doação: @Model.Nome</h1>
+
+<form asp-action="editar">
+    <partial name="_Form" />
+    <input asp-for="Id" />
+    <button texto="Editar"></button>
+</form>

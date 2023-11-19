@@ -9,6 +9,7 @@ namespace GiveNWin_Enterprise.Peristencia
         public DbSet<Doador> Doadores { get; set; }
         public DbSet<Parceiro> Parceiros { get; set; }
         public DbSet<Receptor> Receptores { get; set; }
+        public DbSet<TipoDoacao> TipoDoacoes { get; set; }
         public GiveNWinContext(DbContextOptions options) : base(options) { }
     }
 }
