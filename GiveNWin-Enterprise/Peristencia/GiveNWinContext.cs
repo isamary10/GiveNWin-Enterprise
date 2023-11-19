@@ -7,6 +7,7 @@ namespace GiveNWin_Enterprise.Peristencia
     {
         public DbSet<Cupom> Cupons { get; set; }
         public DbSet<Doador> Doadores { get; set; }
+        public DbSet<Parceiro> Parceiros { get; set; }
 
         public GiveNWinContext(DbContextOptions options) : base(options) { }
     }

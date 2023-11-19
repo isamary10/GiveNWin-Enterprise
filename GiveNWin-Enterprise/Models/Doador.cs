@@ -12,7 +12,7 @@ namespace GiveNWin_Enterprise.Models
         [Required]
         public string? Nome { get; set; }
         public string? Cpf { get; set; }
-        [Column("Dt_Nascimento"), Required]
+        [Column("Dt_Nascimento"), Required, DataType(DataType.Date)]
         public DateTime? DataNascimento { get; set; }
         [Required]
         public string? Email { get; set; }
