@@ -15,5 +15,8 @@ namespace GiveNWin_Enterprise.Models
         public string? NomeFantasia { get; set; }
         [Required]
         public string? Cnpj { get; set; }
+        //1:1
+        public Endereco Endereco { get; set; }
+        public int EnderecoId { get; set; }
     }
 }

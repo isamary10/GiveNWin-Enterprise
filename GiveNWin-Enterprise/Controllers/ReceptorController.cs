@@ -1,6 +1,7 @@
 ﻿using GiveNWin_Enterprise.Models;
 using GiveNWin_Enterprise.Peristencia;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace GiveNWin_Enterprise.Controllers
 {
@@ -35,7 +36,7 @@ namespace GiveNWin_Enterprise.Controllers
         [HttpGet]
         public IActionResult Editar(int id)
         {
-            var receptor = _context.Receptores.First(d => d.Id == id);
+            var receptor = _context.Receptores.Include(r => r.Endereco).First(r => r.Id == id);
             return View(receptor);
         }
         public IActionResult Cadastrar()
@@ -55,6 +56,7 @@ namespace GiveNWin_Enterprise.Controllers
         {
             var lista = _context.Receptores
                 .Where(r => r.Cnpj.Contains(filtro) || string.IsNullOrEmpty(filtro))
+                .Include(r => r.Endereco)
                 .ToList();
             return View(lista);
         }
