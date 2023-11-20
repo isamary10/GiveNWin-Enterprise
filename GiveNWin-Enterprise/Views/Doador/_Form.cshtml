@@ -17,6 +17,21 @@
     <input asp-for="Email" class="form-control" />
 </div>
 <div class="mb-3">
+    <label asp-for="Genero"></label>
+    <select asp-for="Genero" class="form-select"
+            asp-items="@Html.GetEnumSelectList<Genero>()">
+        <option>Selecione</option>
+    </select>
+</div>
+<div class="mb-3">
+    <label asp-for="Estado"></label>
+    <select asp-for="Estado" class="form-select"
+            asp-items="@Html.GetEnumSelectList<Estado>()">
+        <option>Selecione</option>
+    </select>
+</div>
+<div class="mb-3">
     <label asp-for="Pontuacao"></label>
     <input asp-for="Pontuacao" class="form-control" />
 </div>
+

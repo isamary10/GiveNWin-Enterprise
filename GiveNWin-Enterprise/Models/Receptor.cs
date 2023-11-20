@@ -8,14 +8,13 @@ namespace GiveNWin_Enterprise.Models
     public class Receptor
     {
         [HiddenInput]
-        public int Id { get; set; }
+        public int ReceptorId { get; set; }
         [Column("Razao_Social"), Required, Display(Name = "Razão Social")]
         public string? RazaoSocial { get; set; }
         [Column("Nome_Fantasia"), Display(Name = "Nome Fantasia")]
         public string? NomeFantasia { get; set; }
         [Required]
         public string? Cnpj { get; set; }
-        //1:1
         public Endereco Endereco { get; set; }
         public int EnderecoId { get; set; }
     }

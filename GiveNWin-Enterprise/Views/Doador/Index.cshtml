@@ -23,6 +23,8 @@
         <th>CPF</th>
         <th>Data Nascimento</th>
         <th>Email</th>
+        <th>Genero</th>
+        <th>Estado</th>
         <th>Pontuação</th>
         <th></th>
     </tr>
@@ -33,12 +35,14 @@
             <td>@item.Cpf</td>
             <td>@item.DataNascimento</td>
             <td>@item.Email</td>
+            <td>@item.Genero</td>
+            <td>@item.Estado</td>
             <td>@item.Pontuacao</td>
             <td>
-                <a asp-action="editar" asp-route-id="@item.Id"
+                <a asp-action="editar" asp-route-id="@item.DoadorId"
                    class="btn btn-sm btn-outline-info">Editar</a>
                 <!-- Button trigger modal -->
-                <button onclick="key.value = @item.Id" type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button onclick="key.value = @item.DoadorId" type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Remover
                 </button>
             </td>

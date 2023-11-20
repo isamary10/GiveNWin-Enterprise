@@ -35,7 +35,7 @@ namespace GiveNWin_Enterprise.Controllers
         [HttpGet]
         public IActionResult Editar(int id)
         {   
-            var tipoDoacao = _context.TipoDoacoes.First(d => d.Id == id);
+            var tipoDoacao = _context.TipoDoacoes.First(d => d.TipoDoacaoId == id);
             return View(tipoDoacao);
         }
 

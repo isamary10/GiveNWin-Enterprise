@@ -35,7 +35,7 @@ namespace GiveNWin_Enterprise.Controllers
         [HttpGet]
         public IActionResult Editar(int id)
         {
-            var doador = _context.Doadores.First(d => d.Id == id);
+            var doador = _context.Doadores.First(d => d.DoadorId == id);
             return View(doador);
         }
 

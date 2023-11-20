@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GiveNWin_Enterprise.Migrations
 {
     [DbContext(typeof(GiveNWinContext))]
-    [Migration("20231120152318_Endereco")]
-    partial class Endereco
+    [Migration("20231120212741_Inicial")]
+    partial class Inicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,13 +53,29 @@ namespace GiveNWin_Enterprise.Migrations
                     b.ToTable("TB_GIVEWIN_CUPOM");
                 });
 
-            modelBuilder.Entity("GiveNWin_Enterprise.Models.Doador", b =>
+            modelBuilder.Entity("GiveNWin_Enterprise.Models.Doacao", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("DataDoacao")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TB_GIVEWIN_DOACAO");
+                });
+
+            modelBuilder.Entity("GiveNWin_Enterprise.Models.Doador", b =>
+                {
+                    b.Property<int>("DoadorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DoadorId"));
 
                     b.Property<string>("Cpf")
                         .HasColumnType("nvarchar(max)");
@@ -73,6 +89,12 @@ namespace GiveNWin_Enterprise.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Estado")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Genero")
+                        .HasColumnType("int");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -80,7 +102,7 @@ namespace GiveNWin_Enterprise.Migrations
                     b.Property<int>("Pontuacao")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("DoadorId");
 
                     b.ToTable("TB_GIVEWIN_DOADOR");
                 });
@@ -134,11 +156,11 @@ namespace GiveNWin_Enterprise.Migrations
 
             modelBuilder.Entity("GiveNWin_Enterprise.Models.Receptor", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ReceptorId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReceptorId"));
 
                     b.Property<string>("Cnpj")
                         .IsRequired()
@@ -156,7 +178,7 @@ namespace GiveNWin_Enterprise.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Razao_Social");
 
-                    b.HasKey("Id");
+                    b.HasKey("ReceptorId");
 
                     b.HasIndex("EnderecoId");
 
@@ -165,11 +187,11 @@ namespace GiveNWin_Enterprise.Migrations
 
             modelBuilder.Entity("GiveNWin_Enterprise.Models.TipoDoacao", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("TipoDoacaoId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TipoDoacaoId"));
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -178,9 +200,9 @@ namespace GiveNWin_Enterprise.Migrations
                     b.Property<int>("Pontos")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("TipoDoacaoId");
 
-                    b.ToTable("TB_GIVEWIN_TIPO_DOCAO");
+                    b.ToTable("TB_GIVEWIN_TIPO_DOACAO");
                 });
 
             modelBuilder.Entity("GiveNWin_Enterprise.Models.Receptor", b =>

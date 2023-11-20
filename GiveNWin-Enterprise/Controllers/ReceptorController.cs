@@ -36,7 +36,7 @@ namespace GiveNWin_Enterprise.Controllers
         [HttpGet]
         public IActionResult Editar(int id)
         {
-            var receptor = _context.Receptores.Include(r => r.Endereco).First(r => r.Id == id);
+            var receptor = _context.Receptores.Include(r => r.Endereco).First(r => r.ReceptorId == id);
             return View(receptor);
         }
         public IActionResult Cadastrar()

@@ -29,10 +29,10 @@
             <td>@item.Nome</td>
             <td>@item.Pontos</td>
             <td>
-                <a asp-action="editar" asp-route-id="@item.Id"
+                <a asp-action="editar" asp-route-id="@item.TipoDoacaoId"
                    class="btn btn-sm btn-outline-info">Editar</a>
                 <!-- Button trigger modal -->
-                <button onclick="key.value = @item.Id" type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button onclick="key.value = @item.TipoDoacaoId" type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Remover
                 </button>
             </td>

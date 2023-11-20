@@ -35,10 +35,10 @@
             <td>@item.Endereco.Logradouro</td>
             <td>@item.Endereco.Cep</td>
             <td>
-                <a asp-action="editar" asp-route-id="@item.Id"
+                <a asp-action="editar" asp-route-id="@item.ReceptorId"
                    class="btn btn-sm btn-outline-info">Editar</a>
                 <!-- Button trigger modal -->
-                <button onclick="key.value = @item.Id" type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button onclick="key.value = @item.ReceptorId" type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Remover
                 </button>
             </td>
