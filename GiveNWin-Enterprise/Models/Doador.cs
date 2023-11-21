@@ -22,6 +22,7 @@ namespace GiveNWin_Enterprise.Models
         public Genero Genero { get; set; }
         [Required]
         public Estado Estado { get; set; }
+        public List<Doacao> Doacoes { get; set; }
     }
 
     public enum Genero

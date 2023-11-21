@@ -1,0 +1,21 @@
+﻿@model Doacao
+
+<div class="form-group">
+    <label asp-for="DataDoacao"></label>
+    <input asp-for="DataDoacao" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label asp-for="ReceptorId"></label>
+    <select asp-for="ReceptorId" class="form-control" asp-items="@ViewBag.Receptores"></select>
+</div>
+
+<div class="form-group">
+    <label asp-for="DoadorId"></label>
+    <select asp-for="DoadorId" class="form-control" asp-items="@ViewBag.Doadores"></select>
+</div>
+
+<div class="form-group">
+    <label asp-for="DoacoesTiposDoacoes"></label>
+    <select asp-for="DoacoesTiposDoacoes" class="form-control" multiple="multiple" asp-items="@ViewBag.TipoDoacoes"></select>
+</div>

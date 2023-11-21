@@ -4,6 +4,7 @@ using GiveNWin_Enterprise.Peristencia;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GiveNWin_Enterprise.Migrations
 {
     [DbContext(typeof(GiveNWinContext))]
-    partial class GiveNWinContextModelSnapshot : ModelSnapshot
+    [Migration("20231120234349_Relacionamentos")]
+    partial class Relacionamentos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
