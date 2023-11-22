@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2023-11-22T23:06:56.9997662Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2023-11-22T22:59:39.8126821Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "6d446799-52c2-4fad-8eef-4f99ee9014c0"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "rg-bcosql"
+    }
+  }
+}

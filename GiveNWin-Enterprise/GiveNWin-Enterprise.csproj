@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>GiveNWin_Enterprise</RootNamespace>
+    <UserSecretsId>fcd1ec04-1661-4b82-99bd-9c16590a5a0a</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
