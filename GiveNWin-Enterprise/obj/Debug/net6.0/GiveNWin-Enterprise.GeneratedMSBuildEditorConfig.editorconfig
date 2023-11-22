@@ -9,125 +9,133 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GiveNWin_Enterprise
 build_property.RootNamespace = GiveNWin_Enterprise
-build_property.ProjectDir = C:\Users\isabo\OneDrive\Documentos\FIAP\GS\Enterprise\GiveNWin-Enterprise\GiveNWin-Enterprise\
+build_property.ProjectDir = C:\Users\logonrmlocal\Desktop\GiveNWin-Enterprise\GiveNWin-Enterprise\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\isabo\OneDrive\Documentos\FIAP\GS\Enterprise\GiveNWin-Enterprise\GiveNWin-Enterprise
+build_property.MSBuildProjectDirectory = C:\Users\logonrmlocal\Desktop\GiveNWin-Enterprise\GiveNWin-Enterprise
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Cupom/Cadastrar.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Cupom/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vwb21cQ2FkYXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Cupom/Editar.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Cupom/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vwb21cRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Cupom/Index.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Cupom/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vwb21cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Cupom/_Form.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Cupom/_Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vwb21cX0Zvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doacao/Cadastrar.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doacao/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9hY2FvXENhZGFzdHJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doacao/_Form.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doacao/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9hY2FvXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doacao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9hY2FvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doacao/_Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9hY2FvXF9Gb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doador/Cadastrar.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doador/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9hZG9yXENhZGFzdHJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doador/Editar.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doador/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9hZG9yXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doador/Index.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doador/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9hZG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doador/_Form.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Doador/_Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9hZG9yXF9Gb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Home/Index.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Home/Privacy.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Parceiro/Cadastrar.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Parceiro/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2Vpcm9cQ2FkYXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Parceiro/Editar.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Parceiro/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2Vpcm9cRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Parceiro/Index.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Parceiro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2Vpcm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Parceiro/_Form.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Parceiro/_Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2Vpcm9cX0Zvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Receptor/Cadastrar.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Receptor/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0b3JcQ2FkYXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Receptor/Editar.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Receptor/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0b3JcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Receptor/Index.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Receptor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0b3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Receptor/_Form.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Receptor/_Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0b3JcX0Zvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Shared/Error.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/TipoDoacao/Cadastrar.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/TipoDoacao/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvYWNhb1xDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/TipoDoacao/Editar.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/TipoDoacao/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvYWNhb1xFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/TipoDoacao/Index.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/TipoDoacao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvYWNhb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/TipoDoacao/_Form.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/TipoDoacao/_Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvYWNhb1xfRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/_ViewImports.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/_ViewStart.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/isabo/OneDrive/Documentos/FIAP/GS/Enterprise/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Shared/_Layout.cshtml]
+[C:/Users/logonrmlocal/Desktop/GiveNWin-Enterprise/GiveNWin-Enterprise/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-s3djo6yyja

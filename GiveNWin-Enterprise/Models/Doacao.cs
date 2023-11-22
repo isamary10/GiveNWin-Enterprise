@@ -23,6 +23,6 @@ namespace GiveNWin_Enterprise.Models
 
         // Relacionamento N:M com TipoDoacao
         [Display(Name = "Tipo Doação")]
-        public List<DoacaoTipoDoacao> DoacoesTiposDoacoes { get; set; }
+        public IList<DoacaoTipoDoacao> DoacoesTiposDoacao { get; set; }
     }
 }

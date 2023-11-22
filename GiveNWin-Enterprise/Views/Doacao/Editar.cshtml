@@ -1,13 +1,13 @@
-﻿@model Receptor
+﻿@model Doacao
 
 @{
     ViewData["Title"] = "Editar";
 }
 
-<h1>Atualizar o receptor: @Model.RazaoSocial</h1>
+<h1>Atualizar a doação do: @Model.Id</h1>
 
 <form asp-action="editar">
     <partial name="_Form" />
-    <input asp-for="ReceptorId" />
+    <input asp-for="Id" />
     <custom-button texto="Editar"></custom-button>
 </form>

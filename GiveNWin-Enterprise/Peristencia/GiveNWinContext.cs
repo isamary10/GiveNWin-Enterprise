@@ -12,7 +12,7 @@ namespace GiveNWin_Enterprise.Peristencia
         public DbSet<TipoDoacao> TipoDoacoes { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Doacao> Doacoes { get; set; }
-        public DbSet<DoacaoTipoDoacao> DoacaoTipoDoacoes { get; set; }
+        public DbSet<DoacaoTipoDoacao> DoacoesTiposDoacao { get; set; }
         public GiveNWinContext(DbContextOptions options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -23,7 +23,7 @@ namespace GiveNWin_Enterprise.Peristencia
             //Configurar a relação da tabela associativa com o Doacao
             modelBuilder.Entity<DoacaoTipoDoacao>()
                 .HasOne(d => d.Doacao)
-                .WithMany(d => d.DoacoesTiposDoacoes)
+                .WithMany(d => d.DoacoesTiposDoacao)
                 .HasForeignKey(d => d.DoacaoId);
 
             //Configurar a relação da tabela associativa com o TipoDoacao

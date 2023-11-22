@@ -13,6 +13,6 @@ namespace GiveNWin_Enterprise.Models
         public string? Nome { get; set; }
         [Required]
         public int Pontos { get; set; }
-        public List<DoacaoTipoDoacao> DoacoesTiposDoacao { get; set; }
+        public IList<DoacaoTipoDoacao> DoacoesTiposDoacao { get; set; }
     }
 }

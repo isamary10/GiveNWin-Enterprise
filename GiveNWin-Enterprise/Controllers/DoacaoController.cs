@@ -3,6 +3,7 @@ using GiveNWin_Enterprise.Peristencia;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace GiveNWin_Enterprise.Controllers
 {
@@ -12,6 +13,22 @@ namespace GiveNWin_Enterprise.Controllers
         public DoacaoController(GiveNWinContext context)
         {
             _context = context;
+        }
+
+        [HttpPost]
+        public IActionResult Editar(Doacao doacao)
+        {
+            _context.Doacoes.Update(doacao);
+            _context.SaveChanges();
+            TempData["msg"] = "Doação atualizado com sucesso!";
+            return RedirectToAction("index");
+        }
+
+        [HttpGet]
+        public IActionResult Editar(int id)
+        {
+            var doacao = _context.Doacoes.First(d => d.Id == id);
+            return View(doacao);
         }
 
         public IActionResult Cadastrar()
@@ -24,7 +41,7 @@ namespace GiveNWin_Enterprise.Controllers
         }
 
         [HttpPost]
-        public ActionResult Cadastrar(Doacao doacao, List<int> tipoDoacoesSelecionadas)
+        public ActionResult Cadastrar(Doacao doacao, List<int> tipoDoacoesSelecionadas, Doador doador)
         {
             _context.Doacoes.Add(doacao);
             _context.SaveChanges();
@@ -37,7 +54,8 @@ namespace GiveNWin_Enterprise.Controllers
                     DoacaoId = doacao.Id,
                     TipoDoacaoId = tipoDoacaoId
                 };
-                _context.DoacaoTipoDoacoes.Add(doacaoTipoDoacao);
+               
+                _context.DoacoesTiposDoacao.Add(doacaoTipoDoacao);
             }
 
             _context.SaveChanges();
@@ -47,7 +65,9 @@ namespace GiveNWin_Enterprise.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var lista = _context.Doacoes
+                .ToList();
+            return View(lista);
         }
     }
 }
