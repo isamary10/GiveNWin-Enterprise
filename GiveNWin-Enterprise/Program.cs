@@ -17,10 +17,7 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
-else
-{
-    app.UseExceptionHandler("/Error");
-}
+
 app.UseStaticFiles();
 
 app.UseRouting();
