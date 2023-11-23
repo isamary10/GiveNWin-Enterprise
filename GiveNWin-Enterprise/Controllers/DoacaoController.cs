@@ -66,6 +66,8 @@ namespace GiveNWin_Enterprise.Controllers
         public IActionResult Index()
         {
             var lista = _context.Doacoes
+                .Include(d => d.Doador)
+                .Include(r => r.Receptor)
                 .ToList();
             return View(lista);
         }

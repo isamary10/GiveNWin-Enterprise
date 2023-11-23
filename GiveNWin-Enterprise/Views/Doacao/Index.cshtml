@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Doador</h1>
+<h1>Doação recebida</h1>
 
 <alert mensagem="@TempData["msg"]"></alert>
 
@@ -21,10 +21,10 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>@item.ReceptorId</td>
-            <td>@item.DoadorId</td>
+            <td>@item.Receptor.RazaoSocial</td>
+            <td>@item.Doador.Nome</td>
             <td>@item.DoacoesTiposDoacao</td>
-            <td>@item.DataDoacao</td>
+            <td>@item.DataDoacao.ToShortDateString()</td>
             <td>
                 <a asp-action="editar" asp-route-id="@item.DoadorId"
                    class="btn btn-sm btn-outline-info">Editar</a>
