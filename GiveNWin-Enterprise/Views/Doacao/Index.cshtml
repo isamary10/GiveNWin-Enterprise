@@ -14,7 +14,6 @@
     <tr>
         <th>Receptor</th>
         <th>Doador</th>
-        <th>Tipo Doação</th>
         <th>Data Doação</th>
         <th></th>
     </tr>
@@ -23,11 +22,8 @@
         <tr>
             <td>@item.Receptor.RazaoSocial</td>
             <td>@item.Doador.Nome</td>
-            <td>@item.DoacoesTiposDoacao</td>
             <td>@item.DataDoacao.ToShortDateString()</td>
             <td>
-                <a asp-action="editar" asp-route-id="@item.DoadorId"
-                   class="btn btn-sm btn-outline-info">Editar</a>
                 <!-- Button trigger modal -->
                 <button onclick="key.value = @item.Id" type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Remover

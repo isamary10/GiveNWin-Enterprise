@@ -18,28 +18,29 @@ namespace GiveNWin_Enterprise.Controllers
         [HttpPost]
         public IActionResult Excluir(int id)
         {
-            var doacao = _context.Doacoes.Find(id);
+            var doacao = _context.Doacoes
+            .Include(d => d.Doador)
+            .Include(d => d.DoacoesTiposDoacao)
+            .FirstOrDefault(d => d.Id == id);
+
+            if (doacao == null)
+            {
+                return NotFound();
+            }
+
+            // Subtrair os pontos atribuídos ao doador
+            int pontuacaoRemover = _context.TipoDoacoes
+                .Where(td => doacao.DoacoesTiposDoacao.Select(dtd => dtd.TipoDoacaoId).Contains(td.TipoDoacaoId))
+                .Sum(td => td.Pontos);
+
+            var doador = _context.Doadores.Find(doacao.DoadorId);
+            doador.Pontuacao -= pontuacaoRemover;
+
             _context.Doacoes.Remove(doacao);
             _context.SaveChanges();
             TempData["msg"] = "Doação removida!";
 
             return RedirectToAction("Index");
-        }
-
-        [HttpPost]
-        public IActionResult Editar(Doacao doacao)
-        {
-            _context.Doacoes.Update(doacao);
-            _context.SaveChanges();
-            TempData["msg"] = "Doação atualizado com sucesso!";
-            return RedirectToAction("index");
-        }
-
-        [HttpGet]
-        public IActionResult Editar(int id)
-        {
-            var doacao = _context.Doacoes.First(d => d.Id == id);
-            return View(doacao);
         }
 
         public IActionResult Cadastrar()
