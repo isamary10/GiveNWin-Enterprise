@@ -8,10 +8,8 @@
 
 <alert mensagem="@TempData["msg"]"></alert>
 
-<form class="row" asp-action="index" method="get">
-    <div class="col-4">
-        <input name="filtro" class="form-control" type="text" placeholder="Digite o cnpj"/>
-    </div>
+<form class="d-flex" asp-action="index" method="get">
+    <input name="filtro" class="form-control" type="text" placeholder="Digite o cnpj"/>
     <custom-button type="submit" texto="Pesquisar"></custom-button>
 </form>
 

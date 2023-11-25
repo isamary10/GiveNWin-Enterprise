@@ -16,6 +16,17 @@ namespace GiveNWin_Enterprise.Controllers
         }
 
         [HttpPost]
+        public IActionResult Excluir(int id)
+        {
+            var doacao = _context.Doacoes.Find(id);
+            _context.Doacoes.Remove(doacao);
+            _context.SaveChanges();
+            TempData["msg"] = "Doação removida!";
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
         public IActionResult Editar(Doacao doacao)
         {
             _context.Doacoes.Update(doacao);
@@ -41,7 +52,7 @@ namespace GiveNWin_Enterprise.Controllers
         }
 
         [HttpPost]
-        public ActionResult Cadastrar(Doacao doacao, List<int> tipoDoacoesSelecionadas, Doador doador)
+        public ActionResult Cadastrar(Doacao doacao, List<int> tipoDoacoesSelecionadas)
         {
             _context.Doacoes.Add(doacao);
             _context.SaveChanges();
@@ -54,9 +65,17 @@ namespace GiveNWin_Enterprise.Controllers
                     DoacaoId = doacao.Id,
                     TipoDoacaoId = tipoDoacaoId
                 };
-               
+
                 _context.DoacoesTiposDoacao.Add(doacaoTipoDoacao);
+
             }
+
+            int pontuacaoTotal = _context.TipoDoacoes
+            .Where(td => tipoDoacoesSelecionadas.Contains(td.TipoDoacaoId))
+            .Sum(td => td.Pontos);
+
+            var doador = _context.Doadores.Find(doacao.DoadorId);
+            doador.Pontuacao += pontuacaoTotal;
 
             _context.SaveChanges();
 
